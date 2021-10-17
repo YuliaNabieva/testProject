@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="341fe561-a0d2-49bd-ae80-04277122d1e2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/EmployeeDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/CRUDDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/CRUDDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/assignmentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/AssignmentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/assignmentDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/AssignmentDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/employeeDAOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/organizationDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/OrganizationDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/subdivisionDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/SubdivisionDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/assignment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Assignment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/organization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Organization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/subdivision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Subdivision.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -298,14 +287,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="DAO" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -324,10 +305,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
-    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1634396619102" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1634445361373" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -363,7 +344,7 @@
       <workItem from="1634025540653" duration="1395000" />
       <workItem from="1634198030685" duration="2672000" />
       <workItem from="1634211097609" duration="2154000" />
-      <workItem from="1634298343305" duration="10991000" />
+      <workItem from="1634298343305" duration="11655000" />
     </task>
     <task id="LOCAL-00001" summary="DAO added">
       <created>1634385800733</created>
@@ -379,11 +360,18 @@
       <option name="project" value="LOCAL" />
       <updated>1634385883247</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="DAO modified">
+      <created>1634445341893</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1634445341893</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17212000" />
+    <option name="totallyTimeSpent" value="17876000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -427,8 +415,11 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="DAO added" />
-    <option name="LAST_COMMIT_MESSAGE" value="DAO added" />
+    <MESSAGE value="DAO modified" />
+    <option name="LAST_COMMIT_MESSAGE" value="DAO modified" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
