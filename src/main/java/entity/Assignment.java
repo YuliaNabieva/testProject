@@ -15,11 +15,11 @@ import java.sql.Date;
 import java.util.Set;
 
 @Entity
-@Table(name = "ssignment")
+@Table(name = "assignment")
 public class Assignment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long assignmentId;
 
     @Column(name = "subject")
     private String subject;
@@ -41,7 +41,7 @@ public class Assignment {
 
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(
-            name = "employee",
+            name = "employeeAssinment",
             joinColumns = @JoinColumn(name = "employeeId"),
             inverseJoinColumns = @JoinColumn(name = "assignmentId")
     )
@@ -53,12 +53,12 @@ public class Assignment {
 
     }
 
-    public Long getId() {
-        return id;
+    public Long getassignmentId() {
+        return assignmentId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setId(Long assignmentId) {
+        this.assignmentId = assignmentId;
     }
 
     public String getSubject() {
@@ -128,7 +128,7 @@ public class Assignment {
     @Override
     public String toString() {
         return "Assignment{" +
-                "id=" + id +
+                "assignmentId=" + assignmentId +
                 ", subject='" + subject + '\'' +
                 ", deadline=" + deadline +
                 ", controlSign='" + controlSign + '\'' +

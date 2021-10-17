@@ -13,7 +13,7 @@ import javax.persistence.Table;
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long employeeId;
 
     @Column(name = "lastName")
     private String lastName;
@@ -31,12 +31,12 @@ public class Employee {
 
     }
 
-    public Long getId() {
-        return id;
+    public Long getemployeeId() {
+        return employeeId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setemployeeId(Long employeeId) {
+        this.employeeId = employeeId;
     }
 
     public String getLastName() {
@@ -74,7 +74,7 @@ public class Employee {
     @Override
     public String toString() {
         return "Employee{" +
-                "id=" + id +
+                "employeeId=" + employeeId +
                 ", lastName='" + lastName + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", patronymicName='" + patronymicName + '\'' +
