@@ -9,9 +9,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class subdivision {
+public class Employee {
     private Long id;
-    private String nameSubdivision;
-    private String contactsSubdivision;
-    private Long supervisorSubdivision;
+    private String lastName;
+    private String firstName;
+    private String patronymicName;
+    private String job;
 }

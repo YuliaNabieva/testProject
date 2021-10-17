@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class organization {
+public class Organization {
     private Long idOrganization;
     private String nameOrg;
     private String fizAdressOrg;

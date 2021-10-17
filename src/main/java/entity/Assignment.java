@@ -11,7 +11,7 @@ import java.sql.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class assignment {
+public class Assignment {
     private Long id;
     private String subject;
     private Long authorOfAssigment;

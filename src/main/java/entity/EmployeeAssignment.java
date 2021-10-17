@@ -9,10 +9,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class employee {
-    private Long id;
-    private String lastName;
-    private String firstName;
-    private String patronymicName;
-    private String job;
+
+public class EmployeeAssignment {
+    private Long employeeId;
+    private Long assignmentId;
 }
