@@ -1,5 +1,7 @@
 package entity;
 
+import lombok.Builder;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,14 +13,17 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import java.io.Serializable;
 import java.sql.Date;
 import java.util.Set;
 
+@Builder
 @Entity
 @Table(name = "assignment")
-public class Assignment {
+public class Assignment implements Serializable {
+    private static final long serialVersionUID = -5749235697982514914L;
+
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long assignmentId;
 
     @Column(name = "subject")

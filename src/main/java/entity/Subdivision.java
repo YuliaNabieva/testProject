@@ -1,5 +1,8 @@
 package entity;
 
+import lombok.Builder;
+
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,13 +11,16 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import java.io.Serializable;
 
+@Builder
 @Entity
 @Table(name = "subdivision")
-public class Subdivision {
+public class Subdivision implements Serializable {
+
+    private static final long serialVersionUID = -4862926644813433707L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idSubdivision;
 
     @Column(name = "nameSubdivision")

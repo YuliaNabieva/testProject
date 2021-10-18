@@ -1,18 +1,24 @@
 package entity;
 
 
+import lombok.Builder;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
+import java.util.Set;
 
+@Builder
 @Entity
 @Table(name = "employee")
-public class Employee {
+public class Employee implements Serializable {
+    private static final long serialVersionUID = -7544538017359643203L;
+
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long employeeId;
 
     @Column(name = "lastName")
@@ -26,6 +32,7 @@ public class Employee {
 
     @Column(name = "job")
     private String job;
+    private Set<Assignment> assignments;
 
     public Employee (){
 
@@ -80,5 +87,8 @@ public class Employee {
                 ", patronymicName='" + patronymicName + '\'' +
                 ", job='" + job + '\'' +
                 '}';
+    }
+
+    public void setAssignment(Assignment testAssignment) {
     }
 }
