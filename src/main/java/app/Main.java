@@ -1,6 +1,8 @@
 package app;
 
 import entity.Employee;
+import entity.Organization;
+import entity.Subdivision;
 import lombok.Builder;
 import entity.Assignment;
 import org.hibernate.Hibernate;
@@ -35,7 +37,6 @@ public class Main {
         testAssignment.setDeadline(new Date(calendar.getTime().getTime()));
         testAssignment.setAuthorOfAssigment(1L);
         testAssignment.setControlSign("done");
-//        testAssignment.setEmployees(employeeRepository.findByLastName("secondEmployeeLastName");
         testAssignment.setExecutionSign("done");
         testAssignment.setPerformersOfAssigment(2L);
         testAssignment.setTextOfAssigment("testTheProgram");
@@ -54,6 +55,13 @@ public class Main {
         secondEmployee.setPatronymicName("secondEmployeePatronymicName");
         secondEmployee.setJob("notBoss");
 
+        Employee thirdEmployee = new Employee();
+        thirdEmployee.setemployeeId(3L);
+        thirdEmployee.setFirstName("thirdEmployeeFirstName");
+        thirdEmployee.setLastName("thirdEmployeeLastName");
+        thirdEmployee.setPatronymicName("thirdEmployeePatronymicName");
+        thirdEmployee.setJob("firstSubdivisionBoss");
+
         Set<Employee> employees = new HashSet<Employee>();
         employees.add(firstEmployee);
         testAssignment.setEmployees(employees);
@@ -62,19 +70,28 @@ public class Main {
         assignments.add(testAssignment);
         firstEmployee.setAssignment(testAssignment);
 
+        Organization firstOrganization = new Organization();
+        firstOrganization.setIdOrganization(1L);
+        firstOrganization.setFizAdressOrg("firstOrganizationFizAdress");
+        firstOrganization.setUrAdressOrg("firstOrganizationUrAdress");
+        firstOrganization.setNameOrg("firstOrganizationName");
+        firstOrganization.setSupervisorOrg(1L);
+
+        Subdivision firstSubdivision = new Subdivision();
+        firstSubdivision.setIdSubdivision(1L);
+        firstSubdivision.setContactsSubdivision("firstSubdivisionContacts");
+        firstSubdivision.setNameSubdivision("firstSubdivisionName");
+        firstSubdivision.setSupervisorSubdivision(3L);
+
 
         assignmentRepository.save(testAssignment);
         employeeRepository.save(firstEmployee);
         employeeRepository.save(secondEmployee);
+        employeeRepository.save(thirdEmployee);
+        organizationRepository.save(firstOrganization);
+        subdivisionRepository.save(firstSubdivision);
 
 
 
-
-        Session session = Util.getSessionFactory().openSession();
-
-        session.beginTransaction();
-
-        session.getTransaction().commit();
-        Util.shutdown();
     }
 }
